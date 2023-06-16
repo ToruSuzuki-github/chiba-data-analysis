@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- エンコードの指定 -->
+<meta charset="utf-8"/>
+
+<!-- Leafletを使うための、cssとJavaScriptライブラリの指定 start -->
+<link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.min.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+<!-- Leafletを使うための、cssとJavaScriptライブラリの指定 end -->
+
+<style>
+#map { width: 800px; height: 600px;}
+</style>
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<!--My program and data files -->
+<script type='text/javascript' src="app_FinalHomework.js"></script> <!--課題プログラム-->
+<!--<script type='text/javascript' src="chiba_med_providers.js"></script> --><!--病院データ-->
+<script type='text/javascript' src="chiba_base_mesh.js"></script> <!--メッシュデータ-->
+<script type='text/javascript' src="chiba_gas_station.js"></script> <!--ガソリンスタンド-->
+
+</head>
+<body>
+
+<!-- 切り替えボタン -->
+<!--
+<button id="on_button">Show markers</button>
+<button id="off_button">Clear markers</button><br>
+-->
+
+<!-- 切り替えラジオボタン表示 -->
+<!--
+<div id="selector-hosp">
+<input type="radio" name="show_hosp" id="only_hosp" value="1"><label for="only_hosp">Only hospitals</label>
+<input type="radio" name="show_hosp" id="med_all" value="2"><label for="med_all">Hospitals and clinics</label>
+<input type="radio" name="show_hosp" id="no_med" value="3" checked><label for="no_med">Show no markers</label>
+</div>
+-->
+
+<!--オフボタン表示-->
+<!--
+<button id="off_button">Clear markers</button>
+-->
+
+<!--地図の表示-->
+<div id="map"></div>
+<!--
+<br>
+<div id="map2"></div>
+-->
+
+</body>
+</html>
